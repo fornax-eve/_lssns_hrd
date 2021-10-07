@@ -1,3 +1,4 @@
+'use strict';
 const func = function (arg) {
     if (typeof arg != 'string') {
         console.log('В качестве аргумента передана не строка.');
@@ -9,3 +10,6 @@ const func = function (arg) {
     }
     return argN;
 }
+
+let str = '    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab accusantium  ';
+console.log(func(str))
