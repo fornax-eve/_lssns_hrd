@@ -1,7 +1,6 @@
 let ru_week = ['Понедельник', 'Вторник', 'Среда', 'Четвер', 'Пятница', 'Субота', 'Воскресенье'];
 let en_week = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
-// let lang = prompt('Введите en или ru')
-let lang = 'ru';
+let lang = prompt('Введите en или ru')
 
 if (lang == 'ru') {
     ru_week.forEach(a => console.log(a))
@@ -23,12 +22,11 @@ switch (lang) {
 };
 
 
-let week = {ru : ['Понедельник', 'Вторник', 'Среда', 'Четвер', 'Пятница', 'Субота', 'Воскресенье'],
-    en : ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday']}
+let week = {ru : ru_week,
+    en : en_week}
 
 console.log(week[lang])
 
-let namePerson = 'Артем';
-// let namePerson = prompt('Введите Артем, Александр или любое другое имя');
+let namePerson = prompt('Введите Артем, Александр или любое другое имя');
 (namePerson == 'Артем') ? console.log('Директор') : (namePerson == 'Александр') ? console.log('Преподаватель') :
     console.log('Студент')
