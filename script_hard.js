@@ -2,6 +2,7 @@ let ru_week = ['Понедельник', 'Вторник', 'Среда', 'Чет
 let en_week = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
 let lang = prompt('Введите en или ru')
 
+
 if (lang == 'ru') {
     ru_week.forEach(a => console.log(a))
 } else if (lang == 'en') {
@@ -21,11 +22,11 @@ switch (lang) {
         console.log('Некорректный выбор языка')
 };
 
-
 let week = {ru : ru_week,
     en : en_week}
+let massive = week[lang].forEach(b => console.log(b))
+console.log(massive)
 
-console.log(week[lang])
 
 let namePerson = prompt('Введите Артем, Александр или любое другое имя');
 (namePerson == 'Артем') ? console.log('Директор') : (namePerson == 'Александр') ? console.log('Преподаватель') :
