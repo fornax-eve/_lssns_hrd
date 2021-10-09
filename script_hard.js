@@ -2,7 +2,6 @@
 
 let week = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
 let date = new Date();
-console.log(week[date.getDay()])
 
 for( let day of week) {
     let nday = day;
